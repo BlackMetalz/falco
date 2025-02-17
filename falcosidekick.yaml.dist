@@ -1,8 +1,9 @@
-falcosidekick:
+
+webui:
   enabled: true
-  config:
-    telegram:
-      chatid: "" # Telegram Identifier of the shared chat, if not empty, Telegram is enabled
-      token: "" # Telegram bot authentication token
-      # message_thread_id: "" # Telegram individual chats within the group
-      minimumpriority: "critical" # minimum priority of event for using this output, order is emergency|alert|critical|error|warning|notice|informational|debug or "" (default)
+config:
+  telegram:
+    chatid: "" # Telegram Identifier of the shared chat, if not empty, Telegram is enabled
+    token: "" # Telegram bot authentication token
+    # message_thread_id: "" # Telegram individual chats within the group
+    minimumpriority: "error" # minimum priority of event for using this output, order is emergency|alert|critical|error|warning|notice|informational|debug or "" (default)
